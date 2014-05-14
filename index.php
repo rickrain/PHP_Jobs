@@ -18,20 +18,25 @@ $jobs = array(
 <head>
     <meta charset="utf-8" />
     <title>PHP Jobs</title>
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css" rel="stylesheet">
 </head>
  
 <body>
-    <div>
-      <a href="index.php">PHP Jobs v1.0</a>
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.php"><span class="glyphicon glyphicon-home"></span> PHP Jobs <span class="label label-info">v2.0</span></a>
+        </div>
+      </div>
     </div>
  
-    <div>
-        <h1>Current Jobs</h1>    
+    <div class="container">
+        <h1><span class="glyphicon glyphicon-list"></span> Current Jobs</h1>    
 <?php
 if (count($jobs) > 0)
 {
 ?>
-        <table>
+        <table class="table table-striped">
             <tr>
                 <th>Job Title</th>
                 <th>Job Descripton</th>
