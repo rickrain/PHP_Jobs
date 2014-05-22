@@ -1,4 +1,7 @@
 <?php
+# Randomly sleep for up to 3 seconds.
+sleep(rand(0,3));
+
 $jobs = array(
     array(
         "job_title" => "Azure Cloud Developer", 
